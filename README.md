@@ -8,19 +8,20 @@ the following may not apply.
 
 #### gRPC
 Plaintext:
+
 This is the hostname that most people should unless you want to use secure gRPC. It returns the IPs for all public Acess Nodes
 and it kept up to date between sporks:
 * `access.mainnet.nodes.onflow.org:9000`
 
 You can also connect to individual nodes by their hostname. Each spork, there are a new set of Access nodes created, which will
-have a different hostname. In the examples below `mainnet16` would become `mainnet17`, and so on.
-Individual Nodes:
+have different hostnames. In the examples below `mainnet16` would become `mainnet17`, and so on.
 * `access-001.mainnet16.nodes.onflow.org:9000`
 * `access-002.mainnet16.nodes.onflow.org:9000`
 * `access-003.mainnet16.nodes.onflow.org:9000`
 * `access-004.mainnet16.nodes.onflow.org:9000`
 
 Secure:
+
 When connecting over TLS, you need to connect to the specific node since TLS certificates are tied to the node. See [secure-grpc](examples/secure-grpc/README.md) for more details.
 * `access-001.mainnet16.nodes.onflow.org:9001`
 * `access-002.mainnet16.nodes.onflow.org:9001`
@@ -32,6 +33,7 @@ Secure:
 * `https://mainnet.onflow.org`
 
 Plaintext:
+* `access.mainnet.nodes.onflow.org:8000`
 * `access-001.mainnet16.nodes.onflow.org:8000`
 * `access-002.mainnet16.nodes.onflow.org:8000`
 * `access-003.mainnet16.nodes.onflow.org:8000`
@@ -42,6 +44,7 @@ Secure:
 * `https://rest-mainnet.onflow.org`
 
 Plaintext:
+* `access.mainnet.nodes.onflow.org:8070`
 * `access-001.mainnet16.nodes.onflow.org:8070`
 * `access-002.mainnet16.nodes.onflow.org:8070`
 * `access-003.mainnet16.nodes.onflow.org:8070`
